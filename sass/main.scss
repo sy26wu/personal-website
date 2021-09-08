@@ -48,7 +48,7 @@ header {
 
     img.logo {
         float: left;
-        margin: auto 5px auto 20px; /* gutter */
+        margin: auto 5px auto 20px; /* margin */
         max-width: 40px; /* safari */        
     }
 
@@ -62,7 +62,7 @@ header {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            margin: auto 20px auto auto; /* gutter */
+            margin: auto 20px auto auto; /* margin */
                                      
             li {
                 /* center text vertically within li*/
@@ -98,10 +98,14 @@ header {
     background-image: linear-gradient(90deg, #8379F0 0%, #8CDCF6 100%);
     background-color: #8379F0;
     text-align: center;
-    padding: 20px 20px; /* gutter */
+    padding: 20px 20px; /* margin */
 
     .hero-bg {
         display: none;        
+    }
+
+    .headshot {
+        display: none;
     }
 
     h1 {
@@ -115,7 +119,7 @@ header {
         box-shadow: 0px 11px 40px rgba(67, 68, 77, 0.3);
         border-radius: 40px;
         max-width: 230px;
-        padding: 5px 15px;
+        padding: 0.2em 0.7em;
         margin: auto;     
     }
 
@@ -129,11 +133,14 @@ header {
         a {
             width: 13%;
             max-width: 40px;
+            min-width: 25px;
         }
     }
 }
 
 .work {
+    display: flex;
+    flex-direction: column;
 
     h2 {
         /* bg */
@@ -169,7 +176,7 @@ header {
             align-items: center;
 
             .logo {
-                width: 70%;
+                max-height: 80%;
                 max-width: 110px;
             }
         }
@@ -179,10 +186,10 @@ header {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            margin-left: 20px; /* gutter */
+            margin-left: 20px; /* margin */
             margin-right: 30%;
             padding: 1em 10px 1em 0px;
-
+            
             h3 {
                 font-weight: 600;
                 margin: 0px;
@@ -211,6 +218,7 @@ header {
         font-family: "Roboto", sans-serif;
         font-weight: lighter;
         font-size: 14px;
+        text-align: center;
 
         display: block;
         margin: 30px auto 40px;
@@ -223,7 +231,7 @@ header {
     overflow: auto; /* include margin of child elements in container */
     
     .contact-container {
-        margin: auto 20px; /* gutter */
+        margin: auto 20px; /* margin */
         text-align: left;
 
         h2 {
@@ -245,54 +253,62 @@ header {
                 display: flex;
                 flex-direction: column;
                 align-content: space-evenly;
-                align-items: center;
-            }
+                align-items: center;            
 
-            .input-box {
+                .input-box {
+                    margin-bottom: 0.8em; 
                 margin-bottom: 0.8em; 
+                    margin-bottom: 0.8em; 
+                    width: 100%;  
                 width: 100%;  
+                    width: 100%;  
+                    position: relative; 
                 position: relative; 
+                    position: relative; 
 
-                input, textarea {
-                    margin: 0px auto;
-                    display: block;
+                    input, textarea {
+                        margin: 0px auto;
+                        display: block;
+                        padding: 0px; /* line up input and textarea properly */
+                        height: 2em;
 
-                    /* bg */
-                    background-image: linear-gradient(90deg, #8485F1 0%, #8BD1F5 100%);
-                    background-color: #8379F0;
-                    border-radius: 15px;
-                    border: 0;
-                    width: 98%; /* horizontally center */
-                    outline: none;
+                        /* bg */
+                        background-image: linear-gradient(90deg, #8485F1 0%, #8BD1F5 100%);
+                        background-color: #8379F0;
+                        border-radius: 10px;
+                        border: 0;
+                        width: 98%; /* horizontally center */
+                        outline: none;
 
-                    /* typography */
-                    font-family: "Roboto", sans-serif;
-                    font-weight: lighter;
-                    font-size: 14px;
-                    height: 2em;
-                    text-indent: 1em;
-                }
+                        /* typography */
+                        font-family: "Roboto", sans-serif;
+                        font-weight: lighter;
+                        font-size: 14px;
+                        text-indent: 1em;
+                    }
 
-                ::placeholder {
-                    color: #43444D;
-                    font-weight: normal;
-                }
+                    ::placeholder {
+                        color: #43444D;
+                        font-weight: normal;
+                        font-size: 12px;
+                    }
 
-                .message-box{
-                    resize: none;
-                    height: 6em;
-                    padding: 0.5em 1em;
-                    text-indent: 0px;
-                    box-sizing: border-box;
+                    .message-box{
+                        resize: none;
+                        height: 6em;
+                        padding: 0.5em 1em;
+                        text-indent: 0px;
+                        box-sizing: border-box;
+                    }
                 }
             }
 
             button.send-btn {
                 /* bg */
                 background-color: #FFF7AC;
-                border-radius: 324px;
+                border-radius: 40px;
                 border: none;
-                width: 30%;
+                width: 25%;
                 max-width: 150px;
                 display: block;
                 padding: 0.5em;
@@ -300,8 +316,12 @@ header {
                 /* typography */
                 font-family: "Roboto", sans-serif;
                 font-weight: lighter;
-                font-size: 14px;
+                font-size: 12px;
             }
+        }
+
+        .footer-icons {
+            display: none;
         }
     }
     
@@ -313,5 +333,270 @@ header {
         text-align: center;    
 
         margin: 1.5em auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    h2 {
+        font-size: 35px;
+    }
+
+    h3, h4, h5, p {
+        font-size: 18px;
+    }
+
+    header {
+        height: 60px;
+
+        img.logo {
+            margin: auto 5px auto 60px; /* margin */
+            max-width: 60px;
+        }
+
+        nav ul{
+            margin: auto 60px auto auto; /* margin */
+
+            li a {
+                font-size: 13px;
+                letter-spacing: 0.4em;
+            }
+
+            .resume-btn {
+                height: 1.5em;
+            }
+
+            .contact-link {
+                display: flex;
+            }
+        }        
+    }
+
+    .hero {
+        padding: 40px 60px; /* margin */
+        display: flex;
+        justify-content: space-between;
+         
+        h1 {
+            text-align: left;
+            border-radius: 0px 40px 40px 0px;
+            margin-left: -(60px);
+            font-size: 45px;
+            max-width: 300px;
+            padding: 0.2em 1.0em 0.2em 0px;
+            padding-left: 60px;
+        }
+
+        p{
+            margin-top: 1.5em;
+        }
+
+        .headshot {
+            display: block;
+            max-width: 30%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .hero-text {
+            width: 70%;
+            padding-right: 1.5em;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        .hero-icons {
+            display: none;
+        }
+    }
+
+    .work {
+        h2 {
+            max-width: 400px;
+            width: 55%;
+            margin-top: 60px;  
+            padding: 0.3em 1.0em;
+        }
+
+        .work-container {
+            margin-top: 40px;
+
+            .work-text {
+                margin-left: 60px;
+                padding: 2em 1.5em 2em 0px;            
+
+                p {
+                    margin: 1em 0px 0px;
+                }
+            }
+        }
+
+        .more-btn {
+            font-size: 18px;
+            margin: 40px auto 60px;
+        }
+    }
+
+    .footer {
+        .contact-container {
+            margin: auto 60px;
+
+            h2 {
+                margin-bottom: 25px;                
+            }
+
+            p {
+                margin-bottom: 25px;
+            }
+
+            .message-icon-container {
+                display: flex;
+                justify-content: flex-start;                
+
+                .message-container {
+                    width: 75%;
+
+                    .input-box {
+                        input, textarea {
+                            height: 2.3em;
+                            background-image: linear-gradient(90deg, #8481F1 0%, #89C1F4 100%);
+                            font-size: 16px;
+                        }
+
+                        ::placeholder {
+                            font-size: 16px;
+                        }
+
+                        .message-box {
+                            height: 6em;
+                        }
+                    }
+
+                    button.send-btn {
+                        font-size: 16px;
+                        width: 40%;
+                        max-width: 180px;
+                    }           
+                }
+
+                .footer-container {
+                    width: 25%;
+                    display: flex; /* vertically center .footer-icons */                   
+
+                    .footer-icons {
+                        /* bg */
+                        background-color: #8AC5F4;
+                        margin: auto;
+
+                        border-radius: 40px;
+                        padding: 1em 0.5em;
+                        max-height: 200px;    
+                        width: 20%;  
+                        max-width: 50px;              
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        a {
+                            max-width: 55px;  
+                            min-width: 45px;                  
+                        }
+                    }    
+                }             
+            }
+        }
+
+        h5 {
+            font-size: 11px;
+            margin: 3em auto 2em;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    h3, h4, h5, p {
+        font-size: 20px;
+    }
+
+    header {
+        height: 70px;
+
+        img.logo {
+            max-width: 70px;
+        }
+    }
+
+    .hero {
+        background: none;
+
+        .hero-bg {
+            right: 0px;
+            top: 70px;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 97%;
+        }
+
+        .headshot {
+            max-width: 320px;
+            width: 25%;
+        }
+
+        p {
+            padding-left: 80px;
+            margin-top: 1.2em;
+        }
+    }
+
+    .work {
+        
+        h2 {
+            margin-top: 190px;
+            max-width: 700px;
+        }
+
+        .work-container {
+            max-width: 85%;
+            border-radius: 0px 48px 48px 0px;
+            min-width: 500px;
+
+            .work-logo {
+                border-radius: 0px 48px 48px 0px;
+            }
+
+            .work-text {
+                padding: 3.5em 1.5em 3.5em 0px;            
+            }
+        }
+
+        .opposite {
+            flex-direction: row;
+            justify-content: flex-start;
+            border-radius: 48px 0px 0px 48px;
+            align-self: flex-end;
+            background-image: linear-gradient(90deg, #8379F0 -15%, #8CDCF6 100%);
+
+            .work-logo {
+                border-radius: 48px 0px 0px 48px;
+            }
+
+            .work-text {
+                margin: 0px;
+                margin-left: 30%;
+                margin-right: 20px;
+                padding: 3.5em 0px 3.5em 1.5em;          
+            }
+        }
+    }
+
+    h5 {
+        font-size: 14px;
     }
 }
