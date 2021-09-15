@@ -3,5 +3,5 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-sass/main.css
-sass/main.css.map
+sass/*.css
+sass/*.css.map

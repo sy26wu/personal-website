@@ -1,0 +1,447 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.work-container {
+  h1 {
+    font-family: "Libre Baskerville", serif;
+    color: #878787;
+  }
+
+  .company {
+    margin: 0px 0px 0.2em;
+
+    font-family: "Spectral", serif;
+    color: #43444d;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .position {
+    margin: 0px 0px 0.6em;
+
+    font-family: "Spectral", serif;
+    color: #43444d;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .date {
+    margin: 0px;
+
+    font-family: "Roboto", sans-serif;
+    color: #43444d;
+    font-weight: 100;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.045em;
+  }
+
+  .skills-list li {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    color: black;
+    text-align: center;
+  }
+
+  .exp-info {
+    margin: 0px 0px 0.8em;
+
+    font-family: "Roboto", sans-serif;
+    color: #43444d;
+    font-size: 14px;
+  }
+
+  .description li {
+    margin: 0px 0px 0.5em;
+
+    font-family: "Roboto", sans-serif;
+    color: #43444d;
+    font-weight: 200;
+    list-style-type: square;
+    font-size: 12px;
+  }
+}
+
+.hero {
+  background-image: linear-gradient(90deg, #8379f0 0%, #8cdcf6 100%);
+  background-color: #8379f0;
+  text-align: center;
+  padding: 20px 20px; /* margin */
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: "Spectral", serif;
+    color: black;
+  }
+}
+
+.side-nav {
+  display: none;
+}
+
+.text {
+  padding: 1.5em 20px; /* margin */
+  background-color: #f9f9f9;
+
+  .number {
+    display: none;
+  }
+
+  .skills-list {
+    display: none;
+  }
+}
+
+.work-section {
+  display: flex;
+  flex-direction: column-reverse;
+
+  .logo {
+    height: 125px;
+    display: flex;
+
+    img {
+      display: block; /* horizontally center */
+      height: 80%;
+      max-width: 70%;
+      width: auto;
+      margin: auto auto;
+    }
+  }
+}
+
+/* slideshow modified from https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.project-section {
+
+  .text {
+    background-color: #eeeeee;
+  }
+  .images-container {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    img {
+      padding: 20px;
+      display: none;
+      height: 180px;
+      width: auto;
+      box-sizing: border-box;
+    }
+
+    .prev,
+    .next {
+      margin: 2px 10px;
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      padding: 10px 16px;
+      color: rgba(67, 68, 77, 0.2);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 40px;
+      user-select: none;
+      box-sizing: border-box;
+    }
+
+    .prev {
+      left: 0;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .prev:hover,
+    .next:hover {
+      color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .slideshow-nav {
+    display: flex;
+    justify-content: center;
+
+    .dots1,
+    .dots2 {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 0px 2px 8px;
+      background-color: rgba(67, 68, 77, 0.2);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: rgba(67, 68, 77, 0.8);
+    }
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .title {
+    display: flex;
+
+    .icons {
+      display: inline-flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+      img {
+        height: 30px;
+        margin: 0px 5px;
+      }
+
+      .figma-icon {
+        padding: 2px 0px 8px;
+        box-sizing: border-box;
+      }
+    }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hero {
+    height: 80vh;
+    padding: 20px 60px; /* margin */
+
+    h1 {
+      letter-spacing: 0.15em;
+    }
+  }
+
+  .content-container {
+    display: flex;
+
+    .side-nav {
+      display: block;
+
+      ul {
+        width: 60px;
+        position: sticky;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        height: 100vh;
+
+        a {
+          color: rgba(67, 68, 77, 0.4);
+          list-style: none;
+          margin: 40px auto;
+          text-decoration: none;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+
+        .selected-color {
+          color: #43444d;
+        }
+      }
+    }
+
+    .position {
+      margin-bottom: 0;
+    }
+
+    .text {
+      padding: 2em 60px 2em 50px; /* margin */
+
+      .number {
+        display: block;
+        margin: 0px;
+        font-size: 45px;
+        margin-bottom: 0.3em;
+      }
+
+      .company {
+        font-size: 35px;
+        line-height: 1em;
+      }
+
+      .company,
+      .date {
+        display: inline-block;
+      }
+
+      .date {
+        font-size: 12px;
+      }
+
+      .position {
+        font-size: 25px;
+        margin-bottom: 0.3em;
+      }
+      .tech-list {
+        margin-bottom: 0.8em;
+
+        .skills-list {
+          display: flex;
+          padding: 0px;
+          justify-content: flex-start;
+
+          li {
+            font-size: 12px;
+            margin: 2px 6px 2px 0px;
+            padding: 0.2em 0.7em;
+            background-color: #fff7ac;
+            border-radius: 100px;
+          }
+        }
+      }
+
+      .exp-info {
+        font-size: 17px;
+      }
+
+      .description li {
+        font-size: 15px;
+      }
+    }
+
+    .logo {
+      height: 200px;
+    }
+
+    .images-container {
+      img {
+        height: 300px;
+        padding: 30px;
+      }
+
+      .prev,
+      .next {
+        top: 45%;
+      }
+    }
+
+    .slideshow-nav {
+      .dots1,
+      .dots2 {
+        margin: 0px 5px 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .hero {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 45px;
+    letter-spacing: 0.15em;
+  }
+
+  .work-exp-container {
+
+    .work-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border: 1px dashed rgba(67, 68, 77, 0.2);
+
+      .text {
+        width: 70%;
+      }
+
+      .logo {
+        width: 30%;
+      }
+    }
+  }
+
+  .content-container .project-container {
+
+    .project-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      border: 1px dashed rgba(67, 68, 77, 0.2);
+
+      .images-container {
+        margin: none;
+        height: 90%;
+        width: calc(50vw - 40px);
+
+        img {
+          max-width: 90%;
+          height: auto;
+          max-height: 400px;
+        }
+      }    
+    }
+  }
+}
