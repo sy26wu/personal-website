@@ -1,5 +1,5 @@
 $(function () {
-    var projectStart = $('#project-tag').offset().top;
+    var projectStart = $('#project').offset().top;
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > projectStart) {
