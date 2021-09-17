@@ -1,10 +1,11 @@
 /* slideshow modified from https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
-var slideIndex = [1, 1];
-var slideId = ["slides1", "slides2"]
-var dotsId = ["dots1", "dots2"]
+var slideIndex = [1, 1, 1];
+var slideId = ["slides0", "slides1", "slides2"]
+var dotsId = ["dots0", "dots1", "dots2"]
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);

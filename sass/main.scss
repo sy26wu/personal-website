@@ -51,7 +51,7 @@ p {
   background-image: linear-gradient(90deg, #8379f0 0%, #8cdcf6 100%);
   background-color: #8379f0;
   text-align: center;
-  padding: 20px 20px; /* margin */
+  padding: 20px 35px; /* margin */
 
   .hero-bg {
     display: none;
@@ -141,9 +141,9 @@ p {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin-left: 20px; /* margin */
+      margin-left: 35px; /* margin */
       margin-right: 30%;
-      padding: 1em 10px 1em 0px;
+      padding: 1em 16px 1em 0px;
 
       h3 {
         font-weight: 600;
@@ -205,7 +205,7 @@ p {
       font-size: 45px;
       max-width: 300px;
       padding: 0.2em 1em 0.2em 0px;
-      padding-left: 60px;
+      padding-left: 80px;
     }
 
     p {
@@ -352,6 +352,7 @@ p {
 
   .hero {
     background: none;
+    height: 80vh;
 
     .hero-bg {
       right: 0px;

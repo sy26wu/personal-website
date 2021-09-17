@@ -16,7 +16,7 @@ header {
 
   img.logo {
     float: left;
-    margin: auto 5px auto 20px; /* margin */
+    margin: auto 5px auto 35px; /* margin */
     max-width: 40px; /* safari */
     padding: 0.3em;
     box-sizing: border-box;
@@ -32,7 +32,7 @@ header {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      margin: auto 20px auto auto; /* margin */
+      margin: auto 35px auto auto; /* margin */
       list-style-type: none;
 
       li {
