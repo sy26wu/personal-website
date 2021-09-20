@@ -1,0 +1,82 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharon Wu | University of Waterloo</title>
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+
+<body>
+    {% include nav-header.html %}
+    <main>
+        <div class="hero">
+            <img src="assets/img/home-pg/hero-bg.svg" alt="" class="hero-bg">
+            <div class="hero-text">
+                <h1>Sharon Wu</h1>
+                <p>A dedicated and creative individual passionate about technology and business.</p>
+                <p>Currently I’m a third year Management Engineering student at the University of Waterloo.</p>
+            </div>
+            <img src="assets/img/home-pg/headshot.jpg" alt="headshot" class="headshot">
+            <div class="hero-icons">
+                <a href="mailto:sy26wy@uwaterloo.ca"><img src="assets/img/home-pg/email-yellow-icon.svg"
+                        alt="email"></a>
+                <a href="https://www.linkedin.com/in/sharonyw/" target="_blank"><img
+                        src="assets/img/home-pg/linkedin-yellow-icon.svg" alt="linkedin"></a>
+                <a href="https://github.com/sharonywu" target="_blank"><img
+                        src="assets/img/home-pg/github-yellow-icon.svg" alt="github"></a>
+                <a href="https://devpost.com/sharonywu" target="_blank"><img
+                        src="assets/img/home-pg/devpost-yellow-icon.svg" alt="devpost"></a>
+            </div>
+        </div>
+        <div class="work">
+            <h2>Highlighted Work</h2>
+            <a href="work#ceridian"><section class="work-container">
+                <div class="work-logo">
+                    <img class="logo" src="assets/img/shared/ceridian-logo.jpg" alt="ceridian">
+                </div>
+                <div class="work-text">
+                    <h3>Ceridian</h3>
+                    <h4>Software Developer</h4>
+                    <p>Built reusable UI components on the Web Framework team for Dayforce, Ceridian’s HCM application
+                    </p>
+                </div>
+            </section></a>
+            <a href="work#td"><section class="work-container opposite">
+                <div class="work-logo">
+                    <img src="assets/img/shared/td-logo.png" alt="td" class="logo">
+                </div>
+                <div class="work-text">
+                    <div class="title">
+                        <h3>TD Securities</h3>
+                        <h4>Business Analyst</h4>
+                    </div>
+                    <p>Managed release process end-to-end for Darwin, an in-house financial trading application used by
+                        TD’s Front Office</p>
+                </div>
+            </section></a>
+            <a href="work#sitdown"><section class="work-container">
+                <div class="work-logo">
+                    <img src="assets/img/shared/sitdown-logo.svg" alt="SitDown" class="logo">
+                </div>
+                <div class="work-text">
+                    <div class="title">
+                        <h3>SitDown</h3>
+                        <h4>Hack the North</h4>
+                    </div>
+                    <p>A mobile app designed to help make employees feel more safe about returning to work during the
+                        COVID-19 pandemic</p>
+                </div>
+            </section></a>
+            <a href="work" class="more-btn">See More ...</a>
+        </div>
+        {% include contact.html %}
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+
+.footer {
+  background: #43444d;
+  overflow: auto; /* include margin of child elements in container */
+
+  .contact-container {
+    margin: auto 35px; /* margin */
+    text-align: left;
+
+    .contact-text {
+      font-family: "Libre Baskerville", serif;
+      color: white;
+      font-weight: 100;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .contact-descrip {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      color: black;
+      font-weight: 300;
+      margin: 0px;
+      margin-bottom: 25px;
+      color: white;
+    }
+
+    .message-container {
+      border: 2px dashed #ffffff;
+      border-radius: 15px;
+      padding: 1em;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+        align-items: center;
+
+        .input-box {
+          margin-bottom: 0.8em;
+          margin-bottom: 0.8em;
+          margin-bottom: 0.8em;
+          width: 100%;
+          width: 100%;
+          width: 100%;
+          position: relative;
+          position: relative;
+          position: relative;
+
+          input,
+          textarea {
+            margin: 0px auto;
+            display: block;
+            padding: 0px; /* line up input and textarea properly */
+            height: 2em;
+
+            /* bg */
+            background-image: linear-gradient(90deg, #8485f1 0%, #8bd1f5 100%);
+            background-color: #8379f0;
+            border-radius: 10px;
+            border: 0;
+            width: 98%; /* horizontally center */
+            outline: none;
+
+            /* typography */
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            text-indent: 1em;
+          }
+
+          ::placeholder {
+            color: #43444d;
+            font-weight: normal;
+            font-size: 12px;
+          }
+
+          .message-box {
+            resize: none;
+            height: 6em;
+            padding: 0.5em 1em;
+            text-indent: 0px;
+            box-sizing: border-box;
+          }
+        }
+      }
+
+      button.send-btn {
+        /* bg */
+        background-color: #fff7ac;
+        border-radius: 40px;
+        border: none;
+        width: 25%;
+        max-width: 150px;
+        display: block;
+        padding: 0.5em;
+
+        /* typography */
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+      }
+    }
+
+    .footer-icons {
+      display: none;
+    }
+  }
+
+  h5 {
+    /* typography */
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 8px;
+    font-weight: 300;
+    text-align: center;
+
+    margin: 1.5em auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    .contact-container {
+      margin: auto 60px;
+      
+      .contact-text {
+        margin-bottom: 25px;
+        font-size: 35px;
+      }
+
+      p {
+        margin-bottom: 25px;
+      }
+
+      .message-icon-container {
+        display: flex;
+        justify-content: flex-start;
+
+        .message-container {
+          width: 75%;
+
+          .input-box {
+            input,
+            textarea {
+              height: 2.3em;
+              background-image: linear-gradient(90deg, #8481f1 0%, #89c1f4 100%);
+              font-size: 16px;
+            }
+
+            ::placeholder {
+              font-size: 16px;
+            }
+
+            .message-box {
+              height: 6em;
+            }
+          }
+
+          button.send-btn {
+            font-size: 16px;
+            width: 40%;
+            max-width: 180px;
+          }
+        }
+
+        .footer-container {
+          width: 25%;
+          display: flex; /* vertically center .footer-icons */
+
+          .footer-icons {
+            /* bg */
+            background-color: #8ac5f4;
+            margin: auto;
+
+            border-radius: 40px;
+            padding: 1em 0.5em;
+            max-height: 200px;
+            width: 20%;
+            max-width: 50px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+              max-width: 55px;
+              min-width: 45px;
+            }
+          }
+        }
+      }
+    }
+
+    h5 {
+      font-size: 11px;
+      margin: 3em auto 2em;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+  .footer .contact-container .contact-text {
+    font-size: 50px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+}

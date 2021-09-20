@@ -1,0 +1,107 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  height: 40px; /* set 40px all the time */
+
+  img.logo {
+    float: left;
+    margin: auto 5px auto 35px; /* margin */
+    max-width: 40px; /* safari */
+    padding: 0.3em;
+    box-sizing: border-box;
+  }
+
+  nav {
+    width: 70%;
+    float: right;
+    height: 100%;
+
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: auto 35px auto auto; /* margin */
+      list-style-type: none;
+
+      li {
+        /* center text vertically within li*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        a {
+          margin: auto 1.5em;
+
+          /* typography */
+          font-family: "Spectral", serif;
+          font-size: 10px;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: black;
+          text-decoration: none;
+          font-weight: 700;
+        }
+      }
+
+      .resume-btn {
+        background: #fff7ac;
+        border-radius: 324px;
+        height: 1.3em;
+      }
+
+      .contact-link {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    height: 60px;
+
+    img.logo {
+      margin: auto 5px auto 60px; /* margin */
+      max-width: 60px;
+    }
+
+    nav ul {
+      margin: auto 60px auto auto; /* margin */
+
+      li a {
+        font-size: 13px;
+        letter-spacing: 0.4em;
+      }
+
+      .resume-btn {
+        height: 1.5em;
+      }
+
+      .contact-link {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  header {
+    height: 70px;
+
+    img.logo {
+      max-width: 70px;
+    }
+  }
+}
