@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# sharonywu.github.io
-portfolio website
-=======
 # Personal Website
 A portfolio website to showcase my skill set, work experience, and projects. 
 
@@ -18,4 +14,3 @@ Created from the ground up starting with the conceptualization stage, to wirefra
 - FormSubmit
 - Jekyll
 - GitHub Pages
->>>>>>> gh-pages
